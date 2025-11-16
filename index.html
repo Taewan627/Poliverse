@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폴리버스 - AI 기반 정책 시뮬레이션 플랫폼</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <script>
+      // HuggingFace Spaces 팝업 숨기기
+      setTimeout(() => {
+        const popup = document.querySelector('.get-started-container');
+        if (popup) {
+          popup.style.display = 'none';
+        }
+        // 다른 가능한 팝업 선택자들
+        const selectors = [
+          '[data-testid="get-started"]',
+          '.get-started',
+          '.welcome-modal',
+          '.onboarding-overlay'
+        ];
+        selectors.forEach(selector => {
+          const element = document.querySelector(selector);
+          if (element) {
+            element.style.display = 'none';
+          }
+        });
+      }, 100);
+    </script>
+  </body>
+</html>
