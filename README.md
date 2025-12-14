@@ -5,7 +5,6 @@ AI 기반 정책 시뮬레이션 플랫폼
 ## 🚀 배포
 
 - **HuggingFace Spaces**: [https://huggingface.co/spaces/devmeta/poliverse](https://huggingface.co/spaces/devmeta/poliverse)
-- **GitHub Repository**: [https://github.com/Taewan627/poliverse](https://github.com/Taewan627/poliverse)
 
 ## 📋 기능
 
